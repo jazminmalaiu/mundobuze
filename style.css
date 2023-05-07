@@ -356,7 +356,8 @@ footer{
     background-color: #476a61;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "titulo__aros  carrusel__aros";   
+        "titulo__aros  carrusel__aros";  
+    z-index: 50; 
 }
 
 
