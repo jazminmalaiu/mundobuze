@@ -1,0 +1,40 @@
+.main__newin{
+    display: flex;
+    background-color: #476a61;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+
+
+    .titulo__newin{
+        margin-top: 3rem;
+        text-align: center;
+        font-family: "tipografia";
+        color: #e5d8c4;
+    }
+
+    .card-aros-ocaso{
+        width: 100%;
+        align-items: center;
+
+        .texto__newin{
+            background-color: beige;
+            padding: 1rem;
+        
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            color: #37534c;
+        
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+        }
+
+        &:hover{
+            border: 4px solid #e5d8c4;
+            border-radius: 2.3rem;
+        }
+    }
+}
+
+

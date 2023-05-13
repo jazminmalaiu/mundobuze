@@ -1,0 +1,115 @@
+
+.main__mundobuze{
+    background-color: #476a61;
+
+    .main__home {
+        min-height: 100vh;
+        padding: 3rem;
+    
+    }
+}
+
+
+
+
+.titulo__transformando{
+   
+    margin-top: 10rem;
+
+    margin-left: 10rem;
+
+    font-family: "tipografia";
+
+    color: #e5d8c4;
+}
+
+.imagen__transformando{
+    width: 50%;
+    border-radius: 2rem;
+    margin-left: 5rem; 
+}
+
+
+
+
+.titulo__creando{
+
+
+    font-family: "tipografia";
+    color: #e5d8c4;
+
+    margin-top: 10rem;
+
+    margin-left: 10rem;
+}
+
+
+.imagen__creando{
+
+    width: 50%;
+    border-radius: 2rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+
+
+
+.titulo__inmortalizando{
+
+    font-family: "tipografia";
+    color: #e5d8c4;
+    
+    margin-top: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+
+}
+
+.texto__inmortalizando{
+    font-family: "tipografia2";
+    color: #e5d8c4;
+    
+    margin-top: 13rem;
+
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+
+
+.mano{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+
+    .titulo__mano{
+        grid-area: titulo__mano;
+    
+        font-family: "tipografia";
+        color: #e5d8c4;
+        
+        display: flex;
+        flex-direction: column;
+        margin-top: 15rem;
+     
+        text-align: center;
+        font-size:large;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .titulo__transformando, .titulo__creando, .titulo__inmortalizando {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+    }

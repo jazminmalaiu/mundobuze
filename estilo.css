@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: tipografia;
     src: url("./fonts/arsenicaTrialRegular.ttf");
 }
@@ -17,7 +17,7 @@
 
 
   /*NAV BAR  */
-
+/* 
 header{
     position: sticky;
     top: 0;
@@ -37,12 +37,12 @@ header{
 .navbar-brand {
     font-family: "tipografia";
     color: #37534c;
-}
-  
+} */
+   
 
 /* BOTTOM */
 
-
+/* 
 footer{
     background-color: transparent;
     }
@@ -72,12 +72,12 @@ footer{
     text-decoration: none;
     font-size: 80%;
 }
-    
+     */
 
 
 /* HOME */
 
-.main__mundobuze{
+/* .main__mundobuze{
     background-color: #476a61;
 }
 
@@ -86,7 +86,6 @@ footer{
     padding: 3rem;
 
 }
-
 
 
 
@@ -188,14 +187,14 @@ footer{
     margin-right: auto;
     text-align: center;
     }
-    }
+    } */
 
 /* @media (max-width: 767px)  */
       
 
 
 /* SERVICIOS */
-
+/* 
 .main.servicios{
     display: flex;
     background-color: antiquewhite;
@@ -268,14 +267,14 @@ footer{
 .card-hover:hover{
     border: 4px solid green;
     border-radius: 2.3rem;
-}
+} */
 
 
 
 /* PRODUCTOS */
 
     
-    
+/*     
 .anillos{
     display: grid;
     min-height: 80vh;
@@ -399,14 +398,14 @@ footer{
         font-size: 150%;
     }
 
-}
+} */
 
 
 
 /* NEW IN */
 
 
-.card-aros-ocaso{
+/* .card-aros-ocaso{
     width: 100%;
     align-items: center;
 }
@@ -446,13 +445,13 @@ footer{
 
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-}
+} */
 
 
 
 /* CONTACTO */
 
-
+/* 
 .main__contacto1{
     min-height: 100vh;
 }
@@ -461,7 +460,7 @@ footer{
 .fondo__contacto1{
     min-height: 100vh;
     /* background-color: antiquewhite; */
-    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap;
     display: flex;
     justify-content: center;
     box-sizing: border-box; 
@@ -495,4 +494,4 @@ footer{
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
-}
+} */

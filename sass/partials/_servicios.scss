@@ -1,0 +1,73 @@
+.main.servicios{
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+
+    .tarjetitas{
+        display: flex;
+    
+        .titulo__servicios{
+            text-align: center;
+            font-family: "tipografia";
+            padding: 1rem;
+        
+        }
+        .card-container{
+            border-radius: 2rem;
+            padding: 1.5rem;
+
+            .card-hover:hover{
+                border: 4px solid green;
+                border-radius: 2.3rem;
+            
+        
+                .imagen{
+                    width: 100%;
+                    border-top-right-radius: 2rem;
+                    border-top-left-radius: 2rem;
+                    
+                }
+                .texto__servicios{
+                    background-color: #37534c;
+                    padding: 1rem;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    color: beige;
+                
+                    border-bottom-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                
+                    .titulo__servicios1{
+                        font-family: "tipografia";
+                        text-align: center;
+                        font-size: 120%;
+
+                        &::first-letter{
+                            color: wheat;
+                            font-size: 1.5rem;
+                        }
+                    }
+                    
+                    
+                    .texto__servicios1{
+                        font-family: "tipografia";
+                        text-align: right;
+                    
+                    }
+                }
+            }    
+        }    
+    }
+}
+
+
+
+.card-hover:hover{
+    border: 4px solid green;
+    border-radius: 2.3rem;
+}
+

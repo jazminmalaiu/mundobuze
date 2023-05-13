@@ -1,0 +1,39 @@
+.main__contacto1{
+    min-height: 100vh;
+
+    .fondo__contacto1{
+        min-height: 100vh;
+        /* background-color: antiquewhite; */
+        /* flex-wrap: wrap; */
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box; 
+        padding: 0rem;
+
+        .titulo__contactanos{
+            text-align: center;
+            font-family: "tipografia";
+            color:rgb(56, 52, 52);
+            margin-top: 3rem;
+          
+        }
+
+        
+        .listado__datos{
+            background-color: #e5d8c4;
+            border: 3px solid  #37534c;
+            border-radius: 1rem;
+            padding: 1rem;
+            list-style-type: none;
+            align-items: stretch;
+            margin-top: 7rem;
+
+            .contacto__datos{
+                order: 0;
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: auto;
+            }
+        }
+    }    
+}

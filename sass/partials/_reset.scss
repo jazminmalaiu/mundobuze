@@ -1,0 +1,72 @@
+@font-face {
+    font-family: tipografia;
+    src: url("./fonts/arsenicaTrialRegular.ttf");
+}
+
+@font-face {
+    font-family: tipografia2;
+    src: url("./fonts/agrandirNarrow.ttf");
+}
+
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
+#my-nav.navbar {
+    background-color: #e5d8c465;
+
+    .navbar-nav {
+        font-family: "tipografia2";
+    }
+
+    .navbar-brand {
+        font-family: "tipografia";
+        color: #37534c;
+    }
+
+}
+
+
+//BOTTOM//
+
+footer{
+    background-color: transparent;
+    }
+    
+.bottoms{
+    background-color: transparent;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .bottom__bottom2,
+    .bottom__bottom3,
+    .bottom__bottom4 {
+    width: 120px;
+    font-family: "tipografia2";
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+    .bottom__bottom2 a,
+    .bottom__bottom3 a,
+    .bottom__bottom4 a {
+    color: rgb(56, 52, 52);
+    text-decoration: none;
+    font-size: 80%;
+}
+
+}
