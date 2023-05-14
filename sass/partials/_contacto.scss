@@ -1,32 +1,50 @@
-.main__contacto1{
+ .main__contacto1{
     min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #5d746e;
 
-    .fondo__contacto1{
-        min-height: 100vh;
+    .fondo__contacto{
+        // min-height: 100vh;
         /* background-color: antiquewhite; */
         /* flex-wrap: wrap; */
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        box-sizing: border-box; 
-        padding: 0rem;
+
+        &.bounce-top {
+            -webkit-animation: bounce-top 0.9s both;
+                    animation: bounce-top 0.9s both;
+        }
+        
+
 
         .titulo__contactanos{
-            text-align: center;
             font-family: "tipografia";
-            color:rgb(56, 52, 52);
-            margin-top: 3rem;
-          
+            color:rgb(235, 235, 235);
+            text-align: center;
+            margin-bottom: 8rem;
+        
         }
 
-        
         .listado__datos{
+            max-width: 100%;
+            margin: 0 auto;
             background-color: #e5d8c4;
             border: 3px solid  #37534c;
             border-radius: 1rem;
-            padding: 1rem;
+            padding: 3rem;
             list-style-type: none;
-            align-items: stretch;
-            margin-top: 7rem;
+            box-sizing: border-box;
+            align-content: center;
+
+            &:hover{
+                transform: rotateZ(360deg) scale(1.5);
+                background-color: $colorPrincipal;
+            }
 
             .contacto__datos{
                 order: 0;
@@ -35,5 +53,28 @@
                 flex-basis: auto;
             }
         }
-    }    
-}
+        
+    }
+}    
+    
+
+@media screen and (max-width: 768px) {
+    .listado__datos {
+    font-size: 80%;
+    max-width: 100%;
+    padding: 0.5rem;
+    }
+
+    .main_contacto1{
+    max-width: 200%;
+    }
+
+    .fondo__contacto{
+        max-width: 120%;
+    }
+
+    }
+
+
+
+ 

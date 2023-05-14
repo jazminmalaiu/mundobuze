@@ -1,115 +1,113 @@
-.anillos{
-    display: grid;
-    min-height: 80vh;
-    background-color: #476a61;
+.main__productos{
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "titulo__anillos   carrusel__anillos";
+    .anillos{
+        display: grid;
+        min-height: 80vh;
+        background-color: #476a61;
 
-    z-index: 50;  
-    
-    .titulo__anillos{
-        font-family: "tipografia";
-        color: beige;
-        grid-area: titulo__anillos;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 200%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo__anillos   carrusel__anillos";
+
+        z-index: 50;  
+        
+        .titulo__anillos{
+            font-family: "tipografia";
+            color: beige;
+            grid-area: titulo__anillos;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 200%;
+        }
+
+        .carrusel__anillos{
+            grid-area: carrusel__anillos;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            border-bottom-left-radius: 50rem;
+
+            .imagenes{
+                width: 50%;
+            }
+        }
     }
 
-    .carrusel__anillos{
-        grid-area: carrusel__anillos;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 50;
-        border-bottom-left-radius: 50rem;
+
+
+    .pulseras{
+        display: grid;
+        min-height: 100vh;
+        background-color: #476a61;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "carrusel__pulseras   titulo__pulseras";
+
+        z-index: 50; 
+
+        .titulo__pulseras{
+            font-family: "tipografia";
+            color: beige;
+            grid-area: titulo__pulseras;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 200%;
+        }
+
+        .carrusel__pulseras{
+            grid-area: carrusel__pulseras;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+        }
+
+        
+        .imagenes{
+            width: 50%;
+        }
+        
     }
 
-    .imagenes{
-        width: 50%;
+    .aros{
+        display: grid;
+        min-height: 100vh;
+        background-color: #476a61;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "titulo__aros  carrusel__aros";  
+        z-index: 50; 
+
+        .titulo__aros{
+            font-family: "tipografia";
+            color: beige;
+            grid-area: titulo__aros;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 200%;
+        }
+        
+        .carrusel__aros{
+            grid-area: carrusel__aros;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+        }
+        .imagenes{
+            width: 50%;
+        }
     }
+
 }
-
-
-
-.pulseras{
-    display: grid;
-    min-height: 100vh;
-    background-color: #476a61;
-
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "carrusel__pulseras   titulo__pulseras";
-
-    z-index: 50; 
-
-    .titulo__pulseras{
-        font-family: "tipografia";
-        color: beige;
-        grid-area: titulo__pulseras;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 200%;
-    }
-
-    .carrusel__pulseras{
-        grid-area: carrusel__pulseras;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 50;
-    }
-
-    
-.imagenes{
-    width: 50%;
-}
-    
-}
-
-
-
-
-
-
-
-
-.aros{
-    display: grid;
-    min-height: 100vh;
-    background-color: #476a61;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "titulo__aros  carrusel__aros";  
-    z-index: 50; 
-
-    .titulo__aros{
-        font-family: "tipografia";
-        color: beige;
-        grid-area: titulo__aros;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 200%;
-    }
-    
-    .carrusel__aros{
-        grid-area: carrusel__aros;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 50;
-    }
-    .imagenes{
-        width: 50%;
-    }
-}
-
-
 
 
 @media (max-width: 768px){

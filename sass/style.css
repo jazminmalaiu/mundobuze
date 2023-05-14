@@ -133,7 +133,12 @@ footer {
     text-align: center;
   }
 }
-.anillos {
+.main__productos {
+  display: flex;
+  background-color: antiquewhite;
+  flex-direction: column;
+}
+.main__productos .anillos {
   display: grid;
   min-height: 80vh;
   background-color: #476a61;
@@ -141,7 +146,7 @@ footer {
   grid-template-areas: "titulo__anillos   carrusel__anillos";
   z-index: 50;
 }
-.anillos .titulo__anillos {
+.main__productos .anillos .titulo__anillos {
   font-family: "tipografia";
   color: beige;
   grid-area: titulo__anillos;
@@ -150,7 +155,7 @@ footer {
   justify-content: center;
   font-size: 200%;
 }
-.anillos .carrusel__anillos {
+.main__productos .anillos .carrusel__anillos {
   grid-area: carrusel__anillos;
   display: flex;
   align-items: center;
@@ -158,11 +163,10 @@ footer {
   z-index: 50;
   border-bottom-left-radius: 50rem;
 }
-.anillos .imagenes {
+.main__productos .anillos .carrusel__anillos .imagenes {
   width: 50%;
 }
-
-.pulseras {
+.main__productos .pulseras {
   display: grid;
   min-height: 100vh;
   background-color: #476a61;
@@ -170,7 +174,7 @@ footer {
   grid-template-areas: "carrusel__pulseras   titulo__pulseras";
   z-index: 50;
 }
-.pulseras .titulo__pulseras {
+.main__productos .pulseras .titulo__pulseras {
   font-family: "tipografia";
   color: beige;
   grid-area: titulo__pulseras;
@@ -179,18 +183,17 @@ footer {
   justify-content: center;
   font-size: 200%;
 }
-.pulseras .carrusel__pulseras {
+.main__productos .pulseras .carrusel__pulseras {
   grid-area: carrusel__pulseras;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 50;
 }
-.pulseras .imagenes {
+.main__productos .pulseras .imagenes {
   width: 50%;
 }
-
-.aros {
+.main__productos .aros {
   display: grid;
   min-height: 100vh;
   background-color: #476a61;
@@ -198,7 +201,7 @@ footer {
   grid-template-areas: "titulo__aros  carrusel__aros";
   z-index: 50;
 }
-.aros .titulo__aros {
+.main__productos .aros .titulo__aros {
   font-family: "tipografia";
   color: beige;
   grid-area: titulo__aros;
@@ -207,14 +210,14 @@ footer {
   justify-content: center;
   font-size: 200%;
 }
-.aros .carrusel__aros {
+.main__productos .aros .carrusel__aros {
   grid-area: carrusel__aros;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 50;
 }
-.aros .imagenes {
+.main__productos .aros .imagenes {
   width: 50%;
 }
 
@@ -229,35 +232,39 @@ footer {
     font-size: 150%;
   }
 }
-.main.servicios {
+.main__servicios {
   display: flex;
   background-color: antiquewhite;
   flex-direction: column;
   gap: 0.5rem;
   padding: 2rem;
 }
-.main.servicios .tarjetitas {
+.main__servicios .tarjetitas {
   display: flex;
 }
-.main.servicios .tarjetitas .titulo__servicios {
+.main__servicios .tarjetitas .titulo__servicios {
   text-align: center;
   font-family: "tipografia";
   padding: 1rem;
 }
-.main.servicios .tarjetitas .card-container {
+.main__servicios .tarjetitas .card-container {
   border-radius: 2rem;
   padding: 1.5rem;
 }
-.main.servicios .tarjetitas .card-container .card-hover:hover {
+.main__servicios .tarjetitas .card-container:hover {
+  transform: scale(1.1);
+}
+.main__servicios .tarjetitas .card-container .card-hover:hover {
   border: 4px solid green;
   border-radius: 2.3rem;
+  transform: scale(1.1);
 }
-.main.servicios .tarjetitas .card-container .card-hover:hover .imagen {
+.main__servicios .tarjetitas .card-container .card-hover .imagenServicios {
   width: 100%;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
 }
-.main.servicios .tarjetitas .card-container .card-hover:hover .texto__servicios {
+.main__servicios .tarjetitas .card-container .card-hover .texto__servicios {
   background-color: #37534c;
   padding: 1rem;
   display: flex;
@@ -267,43 +274,64 @@ footer {
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
-.main.servicios .tarjetitas .card-container .card-hover:hover .texto__servicios .titulo__servicios1 {
+.main__servicios .tarjetitas .card-container .card-hover .texto__servicios .titulo__servicios1 {
   font-family: "tipografia";
   text-align: center;
   font-size: 120%;
 }
-.main.servicios .tarjetitas .card-container .card-hover:hover .texto__servicios .titulo__servicios1::first-letter {
+.main__servicios .tarjetitas .card-container .card-hover .texto__servicios .titulo__servicios1::first-letter {
   color: wheat;
   font-size: 1.5rem;
 }
-.main.servicios .tarjetitas .card-container .card-hover:hover .texto__servicios .texto__servicios1 {
+.main__servicios .tarjetitas .card-container .card-hover .texto__servicios .texto__servicios1 {
   font-family: "tipografia";
   text-align: right;
-}
-
-.card-hover:hover {
-  border: 4px solid green;
-  border-radius: 2.3rem;
 }
 
 .main__newin {
   display: flex;
   background-color: #476a61;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 2rem;
+  padding: 2.5rem;
+  justify-content: center;
+  align-items: center;
 }
-.main__newin .titulo__newin {
-  margin-top: 3rem;
+.main__newin .container_newin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.main__newin .container_newin .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.main__newin .container_newin .row .titulo__newin {
   text-align: center;
   font-family: "tipografia";
   color: #e5d8c4;
 }
-.main__newin .card-aros-ocaso {
-  width: 100%;
-  align-items: center;
+.main__newin .container_newin .row .card-container {
+  flex-grow: 1;
+  max-width: 30%;
 }
-.main__newin .card-aros-ocaso .texto__newin {
+.main__newin .container_newin .row .card-container:hover {
+  transform: scale(1.1);
+}
+.main__newin .container_newin .row .card-container .card-aros-ocaso {
+  width: 100%;
+}
+.main__newin .container_newin .row .card-container .card-aros-ocaso .imagenNewIn {
+  width: 100%;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+.main__newin .container_newin .row .card-container .card-aros-ocaso .texto__newin {
   background-color: beige;
   padding: 1rem;
   display: flex;
@@ -313,41 +341,72 @@ footer {
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
-.main__newin .card-aros-ocaso:hover {
+.main__newin .container_newin .row .card-container .card-aros-ocaso .texto__newin .titulo__newin {
+  color: #37534c;
+  font-size: 80%;
+}
+.main__newin .container_newin .row .card-container .card-aros-ocaso:hover {
   border: 4px solid #e5d8c4;
   border-radius: 2.3rem;
 }
 
 .main__contacto1 {
   min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #5d746e;
 }
-.main__contacto1 .fondo__contacto1 {
-  min-height: 100vh;
+.main__contacto1 .fondo__contacto {
   /* background-color: antiquewhite; */
   /* flex-wrap: wrap; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  box-sizing: border-box;
-  padding: 0rem;
 }
-.main__contacto1 .fondo__contacto1 .titulo__contactanos {
-  text-align: center;
+.main__contacto1 .fondo__contacto.bounce-top {
+  animation: bounce-top 0.9s both;
+}
+.main__contacto1 .fondo__contacto .titulo__contactanos {
   font-family: "tipografia";
-  color: rgb(56, 52, 52);
-  margin-top: 3rem;
+  color: rgb(235, 235, 235);
+  text-align: center;
+  margin-bottom: 8rem;
 }
-.main__contacto1 .fondo__contacto1 .listado__datos {
+.main__contacto1 .fondo__contacto .listado__datos {
+  max-width: 100%;
+  margin: 0 auto;
   background-color: #e5d8c4;
   border: 3px solid #37534c;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 3rem;
   list-style-type: none;
-  align-items: stretch;
-  margin-top: 7rem;
+  box-sizing: border-box;
+  align-content: center;
 }
-.main__contacto1 .fondo__contacto1 .listado__datos .contacto__datos {
+.main__contacto1 .fondo__contacto .listado__datos:hover {
+  transform: rotateZ(360deg) scale(1.5);
+  background-color: #e5d8c4;
+}
+.main__contacto1 .fondo__contacto .listado__datos .contacto__datos {
   order: 0;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .listado__datos {
+    font-size: 80%;
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  .main_contacto1 {
+    max-width: 200%;
+  }
+  .fondo__contacto {
+    max-width: 120%;
+  }
 }/*# sourceMappingURL=style.css.map */
