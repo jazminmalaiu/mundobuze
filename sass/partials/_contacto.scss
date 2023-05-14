@@ -15,10 +15,6 @@
         flex-direction: column;
         justify-content: center;
 
-        &.bounce-top {
-            -webkit-animation: bounce-top 0.9s both;
-                    animation: bounce-top 0.9s both;
-        }
         
 
 
@@ -30,6 +26,7 @@
         
         }
 
+        
         .listado__datos{
             max-width: 100%;
             margin: 0 auto;
@@ -40,11 +37,16 @@
             list-style-type: none;
             box-sizing: border-box;
             align-content: center;
+            transition-property: transform, background-color;
+            transition-duration: 1s, 5s;
+            transition-delay: 1s, 0s;
 
             &:hover{
-                transform: rotateZ(360deg) scale(1.5);
-                background-color: $colorPrincipal;
+                transform: rotateZ(15deg) scale(1);
+                background-color: rgb(235, 235, 235);
             }
+            
+
 
             .contacto__datos{
                 order: 0;
@@ -74,7 +76,3 @@
     }
 
     }
-
-
-
- 

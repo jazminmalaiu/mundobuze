@@ -70,3 +70,41 @@ footer{
 }
 
 }
+
+
+
+.pienuevo{
+    display: flex;
+    justify-content: center;
+    background-color: #e5d8c465;
+    color: black;
+    padding-block: 20px;
+
+    .iconos{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .fab{
+            padding: 1rem;
+            @extend %iconitos;
+        }
+    }
+}
+
+
+//SASS
+// MAP
+$redes: (
+    facebook: rgba(0, 0, 255, 0.356),
+    instagram: rgba(209, 58, 83, 0.363),
+    whatsapp: rgba(0, 128, 0, 0.315)
+);
+
+@each $redsocial, $colordered in $redes{
+
+    .fa-#{$redsocial} {
+        background-color: $colordered;
+    }
+}
+

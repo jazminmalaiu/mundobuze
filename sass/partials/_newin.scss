@@ -21,8 +21,7 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 4rem;
-    
-
+        
             .titulo__newin{
                 text-align: center;
                 font-family: "tipografia";
@@ -33,6 +32,9 @@
             .card-container{
                 flex-grow: 1;
                 max-width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 &:hover{
                     transform: scale(1.1);
@@ -77,3 +79,9 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .card-container{
+        max-width: 100%;
+      /* Estilos para las cards cuando la pantalla se achique */
+    }
+  }

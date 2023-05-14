@@ -1,1 +1,18 @@
 $colorPrincipal: #e5d8c4;
+
+%iconitos {
+    border-radius: 5px;
+
+    &:hover{
+        background-color:#e5d8c465;
+    }
+}
+
+
+@mixin flex ($direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}

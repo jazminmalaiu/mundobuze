@@ -110,19 +110,19 @@
 }
 
 
-@media (max-width: 768px){
 
+
+@media screen and (max-width: 768px) {
     .titulo__anillos {
-        font-size: 150%;
+        font-size: 50%;
     }
 
     .titulo__pulseras {
-        font-size: 150%;
+        font-size: 50%;
     }
 
     .titulo__aros{
-        font-size: 150%;
+        font-size: 50%;
     }
 
 }
-

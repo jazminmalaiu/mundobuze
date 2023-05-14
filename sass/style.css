@@ -1,3 +1,10 @@
+.pienuevo .iconos .fab {
+  border-radius: 5px;
+}
+.pienuevo .iconos .fab:hover {
+  background-color: rgba(229, 216, 196, 0.3960784314);
+}
+
 @font-face {
   font-family: tipografia;
   src: url("./fonts/arsenicaTrialRegular.ttf");
@@ -55,6 +62,34 @@ footer {
   color: rgb(56, 52, 52);
   text-decoration: none;
   font-size: 80%;
+}
+
+.pienuevo {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(229, 216, 196, 0.3960784314);
+  color: black;
+  padding-block: 20px;
+}
+.pienuevo .iconos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pienuevo .iconos .fab {
+  padding: 1rem;
+}
+
+.fa-facebook {
+  background-color: rgba(0, 0, 255, 0.356);
+}
+
+.fa-instagram {
+  background-color: rgba(209, 58, 83, 0.363);
+}
+
+.fa-whatsapp {
+  background-color: rgba(0, 128, 0, 0.315);
 }
 
 .main__mundobuze {
@@ -221,15 +256,15 @@ footer {
   width: 50%;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .titulo__anillos {
-    font-size: 150%;
+    font-size: 50%;
   }
   .titulo__pulseras {
-    font-size: 150%;
+    font-size: 50%;
   }
   .titulo__aros {
-    font-size: 150%;
+    font-size: 50%;
   }
 }
 .main__servicios {
@@ -257,7 +292,7 @@ footer {
 .main__servicios .tarjetitas .card-container .card-hover:hover {
   border: 4px solid green;
   border-radius: 2.3rem;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .main__servicios .tarjetitas .card-container .card-hover .imagenServicios {
   width: 100%;
@@ -319,6 +354,9 @@ footer {
 .main__newin .container_newin .row .card-container {
   flex-grow: 1;
   max-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main__newin .container_newin .row .card-container:hover {
   transform: scale(1.1);
@@ -350,6 +388,12 @@ footer {
   border-radius: 2.3rem;
 }
 
+@media screen and (max-width: 768px) {
+  .card-container {
+    max-width: 100%;
+    /* Estilos para las cards cuando la pantalla se achique */
+  }
+}
 .main__contacto1 {
   min-height: 100vh;
   min-width: 100vh;
@@ -365,9 +409,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.main__contacto1 .fondo__contacto.bounce-top {
-  animation: bounce-top 0.9s both;
 }
 .main__contacto1 .fondo__contacto .titulo__contactanos {
   font-family: "tipografia";
@@ -385,10 +426,13 @@ footer {
   list-style-type: none;
   box-sizing: border-box;
   align-content: center;
+  transition-property: transform, background-color;
+  transition-duration: 1s, 5s;
+  transition-delay: 1s, 0s;
 }
 .main__contacto1 .fondo__contacto .listado__datos:hover {
-  transform: rotateZ(360deg) scale(1.5);
-  background-color: #e5d8c4;
+  transform: rotateZ(15deg) scale(1);
+  background-color: rgb(235, 235, 235);
 }
 .main__contacto1 .fondo__contacto .listado__datos .contacto__datos {
   order: 0;
