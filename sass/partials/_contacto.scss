@@ -1,6 +1,5 @@
  .main__contacto1{
     min-height: 100vh;
-    min-width: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,12 +21,15 @@
             font-family: "tipografia";
             color:rgb(235, 235, 235);
             text-align: center;
-            margin-bottom: 8rem;
+            margin-bottom: 7rem;
+            padding-top: 2rem;
+
         
         }
 
         
         .listado__datos{
+            font-family: "tipografia2";
             max-width: 100%;
             margin: 0 auto;
             background-color: #e5d8c4;
@@ -58,6 +60,21 @@
         
     }
 }    
+
+
+.contenedorformulario{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 8rem;
+    gap: 1rem;
+    font-family: "tipografia2";
+}
+
+.botonform{
+    color:#37534c;
+    background-color: #e5d8c4;
+}
     
 
 @media screen and (max-width: 768px) {

@@ -1,4 +1,5 @@
 .main__newin{
+    min-height: 100vh;
     display: flex;
     background-color: #476a61;
     flex-direction: column;
@@ -12,8 +13,8 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        // max-width: 800px;
         align-content: center;
+        flex-grow: 1;
 
         .row{
         display: flex;
@@ -57,15 +58,18 @@
                         display: flex;
                         flex-direction: column;
                         gap: 0.5rem;
-                        color: #37534c;
+
                     
                         border-bottom-left-radius: 2rem;
                         border-bottom-right-radius: 2rem;
 
-                        .titulo__newin{
-                            color: #37534c;
-                            font-size: 80%;
+                        .titulo__newin2{
+                        color: #37534c;
+                        text-align: center;
+                        font-family: "tipografia";
+                        font-size: 90%;
                         }
+
                     }
 
                     &:hover{
@@ -79,9 +83,10 @@
 }
 
 
+
+
 @media screen and (max-width: 768px) {
     .card-container{
         max-width: 100%;
-      /* Estilos para las cards cuando la pantalla se achique */
     }
   }
