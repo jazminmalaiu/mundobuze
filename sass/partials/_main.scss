@@ -1,85 +1,116 @@
 
 .main__mundobuze{
     background-color: #476a61;
-
-    .main__home {
-        min-height: 100vh;
-        padding: 3rem;
     
+    display: flex;
+    background-color: #476a61;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    // .main__home {
+    //     min-height: 100vh;
+    //     padding: 3rem;
+    
+    // }
+}
+
+
+.transformando{
+    display: flex;
+    justify-content: center;
+    
+
+    .titulo__transformando{
+   
+        margin-top: 5rem;
+    
+        margin-left: 10rem;
+    
+        font-family: "tipografia";
+    
+        color: #e5d8c4;
     }
 }
 
 
-
-
-.titulo__transformando{
-   
-    margin-top: 10rem;
-
-    margin-left: 10rem;
-
-    font-family: "tipografia";
-
-    color: #e5d8c4;
-}
-
-.imagen__transformando{
-    width: 50%;
-    border-radius: 2rem;
-    margin-left: 5rem; 
-}
-
-
-
-
-.titulo__creando{
-
-
-    font-family: "tipografia";
-    color: #e5d8c4;
-
-    margin-top: 10rem;
-
-    margin-left: 10rem;
-}
-
-
-.imagen__creando{
-
-    width: 50%;
-    border-radius: 2rem;
-    margin-left: 5rem;
-    margin-top: 5rem;
-}
-
-
-
-
-.titulo__inmortalizando{
-
-    font-family: "tipografia";
-    color: #e5d8c4;
-    
-    margin-top: 10rem;
-
+.transformando__2{
     display: flex;
-    flex-direction: column;
-    
-    text-align: center;
+    justify-content: center;
 
+
+    .imagen__transformando{
+        width: 50%;
+        border-radius: 2rem;
+    }
 }
 
-.texto__inmortalizando{
-    font-family: "tipografia2";
-    color: #e5d8c4;
-    
-    margin-top: 13rem;
 
+.creando{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+
+        .titulo__creando{
+
+            font-size: 230%;
+            font-family: "tipografia";
+            color: #e5d8c4;
     
-    text-align: center;
+            margin-top: 10rem;
+    
+            margin-left: 15rem;
+        }
 }
+
+
+.creando__2{
+    display: flex;
+    justify-content: center;
+
+    .imagen__creando{
+        margin-top: 5rem;
+        width: 50%;
+        border-radius: 2rem;
+        margin-top: 5rem;
+    }
+}
+
+
+.inmortalizando{
+    flex-direction: column;
+    gap: 10rem;
+
+    .titulo__inmortalizando{
+
+        font-family: "tipografia";
+        color: #e5d8c4;
+        
+        margin-top: 10rem;
+    
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+    
+    }
+    
+    .texto__inmortalizando{
+        font-family: "tipografia2";
+        color: #e5d8c4;
+        
+        margin-top: 5rem;
+    
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+    }
+        
+}
+
+
+
 
 
 
@@ -107,9 +138,39 @@
 
 
 @media screen and (max-width: 767px) {
-    .titulo__transformando, .titulo__creando, .titulo__inmortalizando {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    .transformando {
+        .titulo__transformando {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+        }
+
     }
+
+    .transformando__2 {
+
+        .imagen__transformando {
+            margin-left: 0;
+            margin-top: 0;
+        }
     }
+
+
+    
+    .creando {
+        .titulo__creando {
+            margin-top: 5rem;
+            margin-left: 3rem;
+            font-size: 200%;
+        }
+    }
+
+    .creando__2 {
+
+        .imagen__creando {
+            margin-left: 0;
+            margin-top: 0rem;
+        }
+    }
+    
+}

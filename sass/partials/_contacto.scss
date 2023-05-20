@@ -7,9 +7,6 @@
     background-color: #5d746e;
 
     .fondo__contacto{
-        // min-height: 100vh;
-        /* background-color: antiquewhite; */
-        /* flex-wrap: wrap; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -42,11 +39,6 @@
             transition-property: transform, background-color;
             transition-duration: 1s, 5s;
             transition-delay: 1s, 0s;
-
-            &:hover{
-                transform: rotateZ(15deg) scale(1);
-                background-color: rgb(235, 235, 235);
-            }
             
 
 
@@ -74,22 +66,23 @@
 .botonform{
     color:#37534c;
     background-color: #e5d8c4;
+    
 }
     
 
 @media screen and (max-width: 768px) {
-    .listado__datos {
-    font-size: 80%;
-    max-width: 100%;
-    padding: 0.5rem;
-    }
 
     .main_contacto1{
     max-width: 200%;
-    }
 
     .fondo__contacto{
         max-width: 120%;
-    }
 
+        .listado__datos {
+            font-size: 80%;
+            max-width: 100%;
+            padding: 0.5rem;
+            }
+        }
     }
+}
